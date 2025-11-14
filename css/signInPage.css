@@ -25,7 +25,7 @@ body {
 .right-side {
   width: 50%;
   height: 100%;
-  background-color: #f8e6ea;
+  background-color:rgba(245, 237, 240)
 }
 
 .sign-in-wrapper {
@@ -40,16 +40,6 @@ body {
   margin-bottom: 0.5rem; /* this creates the gap */
 }
 
-.top {
-  height: 50px;
-  width: 100%;
-  /* border: solid 1px black; */
-}
-.middle {
-  height: 50px;
-  width: 100%;
-  border: solid 1px black;
-}
 
 .top {
   display: flex;
@@ -59,23 +49,20 @@ body {
   gap: 1rem;
   width: 100%;
   height: 180px; /* ⬆ increased height */
-  /* padding: 1rem; add a bit of inner spacing */
-  /* border: 1px solid black; */
-  /* box-sizing: border-box; */
+  margin-top: 1rem;
 }
 .top button {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 0.95rem;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   /* background-color: white; */
-  width: 60%; /* buttons wider */
+  width: 70%; /* buttons wider */
   padding: 0.6rem 0; /* smaller height */
 }
 
@@ -87,8 +74,8 @@ body {
 .google-btn {
   background-color: white;
   color: black;
-  border: 1px solid #ccc;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.18); /* subtle black shadow */
+  border:none;
+  box-shadow: 0 3px 8px rgba(0, 0, 0,0.50); /* subtle black shadow */
 }
 
 .google-btn:hover {
@@ -101,7 +88,7 @@ body {
   background-color: black;
   color: white;
   border: none;
-  box-shadow: 0 3px 8px rgba(255, 255, 255, 0.25); /* soft white shadow */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.50); /* soft white shadow */
 }
 
 .apple-btn:hover {
@@ -111,6 +98,103 @@ body {
 }
 
 
+.or-line {
+  width: 70%;          
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem ;
+}
+
+.or-line::before,
+.or-line::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.or-line span {
+  margin: 0 10px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #444;
+  border: px solid #ccc;
+  background-color: white;
+}
+
+
+
+
+
+
+
+/* middle part  */
+.middle {
+ display: flex;
+  flex-direction: column; /* keep buttons stacked */
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  height: 170px; /* ⬆ increased height */
+ margin-bottom: 2rem;
+}
+
+.input-field {
+  width: 70%; /* ⭐ match exact width of buttons */
+  padding: 0.7rem 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  outline: none;
+}
+
+.input-field:focus {
+  border-color: #888;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.15);
+}
+
+
+.main-signin-btn {
+  width: 70%; /* ⭐ same width as Google/Apple/input fields */
+  padding: 0.7rem 0.9rem;
+  background-color: #e84c66; /* choose a nice accent color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  transition: 0.2s ease-out;
+}
+
+.main-signin-btn:hover {
+  background-color: #d3324d;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.22);
+}
+
+.forgot-wrapper {
+  width: 70%;        /* ⭐ EXACT same width as inputs & button */
+  display: flex;
+  justify-content: flex-end;  /* align link to right inside wrapper */
+}
+
+.forgot-pass {
+  font-size: 0.8rem;
+  color: #d3324d;
+  text-decoration: none;
+}
+
+.forgot-pass:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/* bottom part */
 .bottom {
   height: 130px;
   width: 100%;
@@ -138,28 +222,3 @@ body {
   color: rgba(250, 49, 93);
   font-weight: bold;
 }
-
-.or-line {
-  width: 60%;          
-  display: flex;
-  align-items: center;
-  margin: 0.5rem 0;
-}
-
-.or-line::before,
-.or-line::after {
-  content: "";
-  flex: 1;
-  height: 1px;
-  background-color: #ccc;
-}
-
-.or-line span {
-  margin: 0 10px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: #444;
-  border: px solid #ccc;
-  background-color: white;
-}
-
