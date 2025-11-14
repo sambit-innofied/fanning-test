@@ -44,11 +44,6 @@ body {
   width: 100%;
   border: solid 1px black;
 }
-.bottom {
-  height: 50px;
-  width: 100%;
-  border: solid 1px black;
-}
 
 .top {
   display: flex;
@@ -74,9 +69,8 @@ body {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   /* background-color: white; */
-  width:60%; /* buttons wider */
+  width: 60%; /* buttons wider */
   padding: 0.6rem 0; /* smaller height */
-  
 }
 
 .top button img {
@@ -105,4 +99,32 @@ body {
 .apple-btn:hover {
   background-color: #333;
   border-color: #666;
+}
+
+.bottom {
+  height: 130px;
+  width: 100%;
+  border: solid 1px black;
+}
+
+.dont-account {
+  margin-top: 20px;
+  margin-right: 350px;
+  margin-left: 40px;
+  /* border: solid 1px red; */
+}
+
+.sign-up-btn {
+  margin: 10px 40px;
+  height: 40px;
+  border: solid 2.5px rgba(250, 49, 93);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up-btn p {
+  color: rgba(250, 49, 93);
+  font-weight: bold;
 }
