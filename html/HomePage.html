@@ -1,28 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/HomePage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/HomePage.css">
     <title>Home page</title>
-</head>
-<header>
+  </head>
+  <header>
     <nav></nav>
-</header>
+  </header>
 
-<body>
+  <body>
     <main>
-        <div class="left">
-            <div class="profile-container"></div>
-            <div class="sidebar-container"></div>
-        </div>
-        <div class="middle"></div>
-        <div class="right">
-            <div class="suggested-clubs-container"></div>
-            <div class="latest-news-container"></div>
-        </div>
-    </main>
-</body>
+      <!-- Left Part  -->
+      <div class="left">
+        <!-- Profile part  -->
+        <div class="profile-card">
+          <div class="profile-top-row">
+            <div class="profile-avatar-wrap">
+              <img
+                class="profile-avatar"
+                src="../images/profile_image.jpeg"
+                alt="Rose Alex"
+              />
+            </div>
 
+            <div class="profile-name-block">
+              <div class="name-row">
+                <h3 class="profile-name">Rose Alex</h3>
+                <div class="verified">
+                  <img src="../images/verified.png" alt="verified" />
+                </div>
+              </div>
+              <div class="profile-handle">@rosealex</div>
+            </div>
+          </div>
+
+          <div class="profile-stats-card">
+            <div class="profile-stats">
+              <div class="stat">
+                <div class="stat-number">1.2k</div>
+                <div class="stat-label">Follower</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">56</div>
+                <div class="stat-label">Following</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">264</div>
+                <div class="stat-label">Posts</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar part  -->
+
+        <div class="sidebar-container">
+          <nav class="sidebar-menu" aria-label="Main navigation">
+            <ul>
+              <li class="menu-item active" role="button" aria-current="page">
+                <i class="fa-solid fa-house"></i>
+                <span class="label">Home</span>
+              </li>
+
+              <li class="menu-item" role="button">
+                <i class="fa-regular fa-newspaper"></i>
+                <span class="label">News</span>
+              </li>
+
+              <li class="menu-item" role="button">
+                <i class="fa-regular fa-comments"></i>
+                <span class="label">Messages</span>
+                <span class="badge">6</span>
+              </li>
+
+              <li class="menu-item" role="button">
+                <i class="fa-regular fa-bell"></i>
+                <span class="label">Notifications</span>
+                <span class="badge">99</span>
+              </li>
+
+              <li class="menu-item" role="button">
+                <i class="fa-regular fa-calendar"></i>
+                <span class="label">Events</span>
+              </li>
+
+              <li class="menu-item" role="button">
+                <i class="fa-solid fa-users-gear"></i>
+                <span class="label">My Clubs</span>
+              </li>
+
+              <li class="menu-item" role="button">
+                <i class="fa-regular fa-square-check"></i>
+                <span class="label">My Votes</span>
+              </li>
+
+              <li class="menu-item" role="button">
+                <i class="fa-solid fa-user"></i>
+                <span class="label">My Profile</span>
+              </li>
+
+              <li class="menu-item" role="button">
+                <i class="fa-solid fa-gear"></i>
+                <span class="label">Account</span>
+              </li>
+
+              <li class="menu-item" role="button">
+                <i class="fa-solid fa-life-ring"></i>
+                <span class="label">Help</span>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Middle Part -->
+      <div class="middle">
+       
+      </div>
+
+      <div class="right">
+        <div class="suggested-clubs-container"></div>
+        <div class="latest-news-container"></div>
+      </div>
+    </main>
+  </body>
 </html>
