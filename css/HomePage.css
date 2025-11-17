@@ -9,13 +9,13 @@ html,
 body {
   width: 100%;
   height: 100%;
-  background-color: #f5edf0;
 }
 
 main {
   display: flex;
   width: 100%;
   height: 100%;
+  background-color: #f5edf0;
 }
 
 /* ---------nav bar---------------- */
@@ -100,7 +100,7 @@ header {
 /* ---- Badge ---- */
 .notification .badge {
   position: absolute;
-  top: -4px;
+  top: 4px;
   right: -6px;
   background: #fa315d;
   color: #fff;
