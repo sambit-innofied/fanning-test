@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font: 16px Arial, sans-serif;
 }
 
 html,
@@ -17,11 +18,108 @@ main {
 }
 
 /* ---------nav bar---------------- */
-nav {
-  border: 1px solid red;
-  width: 100%;
-  height: 40px;
+header {
+    display: flex;
+    width: 100%;
+    height: 50px;
 }
+/* ---------brand---------------- */
+.brand {
+    display: flex;
+    width: 20%;
+    align-items: center;
+    padding: 7px;
+}
+.brand span:nth-child(1) {
+  color: #f798b7;
+  font-weight: bold;
+  font-size: 26px;
+  padding: 0 3px;
+}
+.brand span:nth-child(2) {
+  color: #fb6082;
+  font-size: 26px;
+  padding: 0 3px;
+}
+
+/* ---------search bar---------------- */
+.search-bar {
+  position: relative;
+  width: 55%;
+  padding: 7px;
+}
+
+.search-bar i {
+  position: absolute;
+  left: 18px;
+  top: 55%;
+  transform: translateY(-50%);
+  color: #9a8a90;            
+  font-size: 18px;
+  pointer-events: none;      
+}
+
+.search-bar input {
+  width: 55%;
+  background: #f5edf0;
+  border: none;
+  border-radius: 10px;       
+  padding: 10px 15px 10px 38px;  
+  font-size: 15px;
+  outline: none;              
+  color: #444;
+}
+
+.search-bar input::placeholder {
+  color: #b8aeb2;             
+}
+
+.nav-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px; 
+  width: 25%;
+  padding-right: 20px;
+}
+
+/* ---- Notification Bell ---- */
+.notification {
+  position: relative;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.notification i {
+  font-size: 18px;
+  color: #f798b7;
+}
+
+/* ---- Badge ---- */
+.notification .badge {
+  position: absolute;
+  top: -4px;
+  right: -6px;
+  background: #fa315d;
+  color: #fff;
+  font-size: 14px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/* ---- Profile Image ---- */
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;    
+  object-fit: cover;     
+}
+
 
 .left {
   width: 20%;
