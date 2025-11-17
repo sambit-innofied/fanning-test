@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font: 16px Arial, sans-serif;
 }
 
 html,
@@ -14,28 +15,298 @@ main {
   display: flex;
   width: 100%;
   height: 100%;
+  background-color: #f5edf0;
 }
 
 /* ---------nav bar---------------- */
-nav {
-  width: 100%;
-  height: 40px;
+header {
+    display: flex;
+    width: 100%;
+    height: 50px;
 }
+/* ---------brand---------------- */
+.brand {
+    display: flex;
+    width: 20%;
+    align-items: center;
+    padding: 7px;
+}
+.brand span:nth-child(1) {
+  color: #f798b7;
+  font-weight: bold;
+  font-size: 26px;
+  padding: 0 3px;
+}
+.brand span:nth-child(2) {
+  color: #fb6082;
+  font-size: 26px;
+  padding: 0 3px;
+}
+
+/* ---------search bar---------------- */
+.search-bar {
+  position: relative;
+  width: 55%;
+  padding: 7px;
+}
+
+.search-bar i {
+  position: absolute;
+  left: 18px;
+  top: 55%;
+  transform: translateY(-50%);
+  color: #9a8a90;            
+  font-size: 18px;
+  pointer-events: none;      
+}
+
+.search-bar input {
+  width: 55%;
+  background: #f5edf0;
+  border: none;
+  border-radius: 10px;       
+  padding: 10px 15px 10px 38px;  
+  font-size: 15px;
+  outline: none;              
+  color: #444;
+}
+
+.search-bar input::placeholder {
+  color: #b8aeb2;             
+}
+
+.nav-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px; 
+  width: 25%;
+  padding-right: 20px;
+}
+
+/* ---- Notification Bell ---- */
+.notification {
+  position: relative;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.notification i {
+  font-size: 18px;
+  color: #f798b7;
+}
+
+/* ---- Badge ---- */
+.notification .badge {
+  position: absolute;
+  top: 4px;
+  right: -6px;
+  background: #fa315d;
+  color: #fff;
+  font-size: 14px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/* ---- Profile Image ---- */
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;    
+  object-fit: cover;     
+}
+
 
 .left {
   width: 20%;
-  height: 100%;
+  height: 100vh;
+  /* border: 1px solid red; */
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* space between profile card + sidebar */
+  padding: 10px;
+  border: 1px solid red;
+  border-bottom: none;
 }
 
 .middle {
   width: 55%;
   height: 100%;
+  padding: 18px 24px;
+  box-sizing: border-box;
 }
 
 .right {
   width: 25%;
   height: 100%;
   border: 1px solid red;
+  
+}
+
+/* left part profile  */
+
+.profile-container {
+  padding: 18px;
+}
+
+.profile-card {
+  flex-shrink: 0;
+  flex: 0 0 auto;
+  margin-bottom: 8px;
+  max-width: 340px;
+  position: relative;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial,
+    sans-serif;
+}
+
+.profile-top-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 6px 0 6px;
+  z-index: 3;
+  position: relative;
+}
+
+
+.profile-avatar-wrap {
+  width: 72px;
+  height: 72px;
+  flex: 0 0 72px;
+  position: relative;
+}
+
+.profile-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+  display: block;
+  transform: translateY(26px); 
+  background: linear-gradient(180deg, #ffdfe8, #fff);
+}
+
+.profile-name-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  margin-left: 6px;
+  margin-top: 25px;
+}
+.name-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.profile-name {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 700;
+  color: #222;
+}
+.verified {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #fff, #fffbf0);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.verified img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.profile-handle {
+  color: #d3324d;
+  font-size: 13px;
+}
+
+.profile-stats-card {
+  margin-top: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+.profile-stats {
+  background: #fff;
+  border-radius: 14px;
+  padding: 32px 12px 24px 12px; 
+  box-shadow: 0 10px 26px rgba(255, 107, 154, 0.06);
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  align-items: flex-end;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.profile-stats .stat {
+  flex: 1;
+  text-align: center;
+  padding: 6px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+  background: transparent;
+}
+.stat-number {
+  font-weight: 700;
+  font-size: 18px;
+  color: #222;
+}
+.stat-label {
+  font-size: 12px;
+  color: #a99aa6;
+  margin-top: 6px;
+}
+
+
+/* ---- Sidebar container (fills left column) ---- */
+
+.sidebar-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100%;
+   flex: 1; 
+  display: flex;
+}
+
+.sidebar-menu {
+   background: #ffffff;
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+  border: 1px solid rgba(0,0,0,0.03);
+
+  width: 100%;
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-menu > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 8px;
+  margin: 0;
+  overflow: visible;
 }
 
 .suggested-clubs-container {

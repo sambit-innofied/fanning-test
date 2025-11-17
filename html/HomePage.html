@@ -1,21 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../css/HomePage.css">
     <title>Home page</title>
 </head>
 <header>
-    <nav></nav>
+    <div class="brand">
+        <span>Social</span>
+        <span>Media</span>
+    </div>
+    <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search post, people or club">
+    </div>
+    <div class="nav-icons">
+        <div class="notification">
+            <i class="fa-solid fa-bell"></i>
+            <span class="badge">3</span>
+        </div>
+
+        <div class="profile">
+            <img src="../images/profile_image.jpeg" alt="User">
+        </div>
+    </div>
 </header>
 
-<body>
+  <body>
     <main>
-        <div class="left">
-            <div class="profile-container"></div>
-            <div class="sidebar-container"></div>
+      <!-- Left Part  -->
+      <div class="left">
+        <!-- Profile part  -->
+        <div class="profile-card">
+          <div class="profile-top-row">
+            <div class="profile-avatar-wrap">
+              <img
+                class="profile-avatar"
+                src="../images/profile_image.jpeg"
+                alt="Rose Alex"
+              />
+            </div>
+
+            <div class="profile-name-block">
+              <div class="name-row">
+                <h3 class="profile-name">Rose Alex</h3>
+                <div class="verified">
+                  <img src="../images/verified.png" alt="verified" />
+                </div>
+              </div>
+              <div class="profile-handle">@rosealex</div>
+            </div>
+          </div>
+
+          <div class="profile-stats-card">
+            <div class="profile-stats">
+              <div class="stat">
+                <div class="stat-number">1.2k</div>
+                <div class="stat-label">Follower</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">56</div>
+                <div class="stat-label">Following</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">264</div>
+                <div class="stat-label">Posts</div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="middle"></div>
         <div class="right">
@@ -165,7 +220,17 @@
                 </div>
             </div>
         </div>
-    </main>
-</body>
+      </div>
 
+      <!-- Middle Part -->
+      <div class="middle">
+       
+      </div>
+
+      <div class="right">
+        <div class="suggested-clubs-container"></div>
+        <div class="latest-news-container"></div>
+      </div>
+    </main>
+  </body>
 </html>
