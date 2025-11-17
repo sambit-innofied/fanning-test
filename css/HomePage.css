@@ -20,16 +20,16 @@ main {
 
 /* ---------nav bar---------------- */
 header {
-    display: flex;
-    width: 100%;
-    height: 50px;
+  display: flex;
+  width: 100%;
+  height: 50px;
 }
 /* ---------brand---------------- */
 .brand {
-    display: flex;
-    width: 20%;
-    align-items: center;
-    padding: 7px;
+  display: flex;
+  width: 20%;
+  align-items: center;
+  padding: 7px;
 }
 .brand span:nth-child(1) {
   color: #f798b7;
@@ -55,31 +55,31 @@ header {
   left: 18px;
   top: 55%;
   transform: translateY(-50%);
-  color: #9a8a90;            
+  color: #9a8a90;
   font-size: 18px;
-  pointer-events: none;      
+  pointer-events: none;
 }
 
 .search-bar input {
   width: 55%;
   background: #f5edf0;
   border: none;
-  border-radius: 10px;       
-  padding: 10px 15px 10px 38px;  
+  border-radius: 10px;
+  padding: 10px 15px 10px 38px;
   font-size: 15px;
-  outline: none;              
+  outline: none;
   color: #444;
 }
 
 .search-bar input::placeholder {
-  color: #b8aeb2;             
+  color: #b8aeb2;
 }
 
 .nav-icons {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 20px; 
+  gap: 20px;
   width: 25%;
   padding-right: 20px;
 }
@@ -117,10 +117,9 @@ header {
 .profile img {
   width: 40px;
   height: 40px;
-  border-radius: 50%;    
-  object-fit: cover;     
+  border-radius: 50%;
+  object-fit: cover;
 }
-
 
 .left {
   width: 20%;
@@ -146,7 +145,6 @@ header {
   width: 25%;
   height: 100%;
   border: 1px solid red;
-  
 }
 
 /* left part profile  */
@@ -174,7 +172,6 @@ header {
   position: relative;
 }
 
-
 .profile-avatar-wrap {
   width: 72px;
   height: 72px;
@@ -190,7 +187,7 @@ header {
   border: 6px solid #fff;
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
   display: block;
-  transform: translateY(26px); 
+  transform: translateY(26px);
   background: linear-gradient(180deg, #ffdfe8, #fff);
 }
 
@@ -246,7 +243,7 @@ header {
 .profile-stats {
   background: #fff;
   border-radius: 14px;
-  padding: 32px 12px 24px 12px; 
+  padding: 32px 12px 24px 12px;
   box-shadow: 0 10px 26px rgba(255, 107, 154, 0.06);
   display: flex;
   gap: 12px;
@@ -274,7 +271,6 @@ header {
   margin-top: 6px;
 }
 
-
 /* ---- Sidebar container (fills left column) ---- */
 
 .sidebar-container {
@@ -283,19 +279,19 @@ header {
   flex-direction: column;
   align-items: stretch;
   height: 100%;
-   flex: 1; 
+  flex: 1;
   display: flex;
 }
 
 .sidebar-menu {
-   background: #ffffff;
+  background: #ffffff;
   border-radius: 14px;
   padding: 14px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.04);
-  border: 1px solid rgba(0,0,0,0.03);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.03);
 
   width: 100%;
-  flex: 1; 
+  flex: 1;
   display: flex;
   flex-direction: column;
 }
@@ -307,6 +303,98 @@ header {
   padding: 8px;
   margin: 0;
   overflow: visible;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  color: #000;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.18s ease, color 0.18s ease;
+}
+
+.menu-item i {
+  width: 22px;
+  min-width: 22px;
+  font-size: 18px;
+  color: #ff8fb3;
+}
+
+.menu-item .label {
+  flex: 1;
+}
+
+.menu-item:hover {
+  background: #ffeaf0;
+}
+.menu-item:hover i,
+.menu-item:hover .label {
+  color: #ff3b72;
+}
+
+.menu-item.active {
+  background: #ffeaf0;
+}
+.menu-item.active i,
+.menu-item.active .label {
+  color: #ff3b72;
+}
+
+.badge {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ff3b72;
+  color: #fff;
+  border-radius: 999px;
+  padding: 3px 8px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.home-header .page-title {
+  font-size: 18px;
+  margin: 0 0 12px 0;
+  color: #111;
+  font-weight: 700;
+  padding-top: 30px;
+}
+
+.feed-nav {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 10px;
+  display: inline-flex;
+  gap: 12px;
+  align-items: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.feed-tab {
+  appearance: none;
+  border: none;
+  background: transparent;
+  padding: 8px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #a3a3a3;
+  font-weight: 600;
+  transition: background 0.18s ease, color 0.18s ease, transform 0.06s ease;
+}
+
+.feed-tab.active {
+  background: linear-gradient(180deg, #fa496f, #ff4f7b);
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(255, 75, 120, 0.12);
 }
 
 .suggested-clubs-container {
@@ -452,52 +540,52 @@ header {
 }
 
 .news-image-container:empty {
-    display: none;
+  display: none;
 }
 
 .news-body {
-    flex: 1;
-    min-width: 0;
+  flex: 1;
+  min-width: 0;
 }
 
 .news-title {
-    font-size: 18px;
-    font-weight: 700;
-    color: #000;
-    margin: 0 0 6px 0;
-    display: -webkit-box;
-    -webkit-line-clamp: 2; 
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 6px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .news-title:hover {
-    color: #fb6082;
-    cursor: pointer;
+  color: #fb6082;
+  cursor: pointer;
 }
 
 .news-meta {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 14px;
-    color: #888; 
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #888;
 }
 .publisher {
-    display: flex;
-    align-items: center;
-    gap: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 .publisher-name {
-    color: #fb6082;
-    font-weight: 500;
+  color: #fb6082;
+  font-weight: 500;
 }
 
 .publisher-icon {
-    width: 22px;
-    height: 22px;
-    object-fit: cover;
+  width: 22px;
+  height: 22px;
+  object-fit: cover;
 }
 
 .news-image-container {
@@ -507,22 +595,22 @@ header {
 }
 
 .news-image {
-    width:70px;
-    height: 70px;
-    border-radius: 6px;
-    object-fit: cover;
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  object-fit: cover;
 }
 
 .news-stats {
-    font-size: 14px;
-    color: #999;
-    display: flex;
-    gap: 6px;
-    align-items: center;
+  font-size: 14px;
+  color: #999;
+  display: flex;
+  gap: 6px;
+  align-items: center;
 }
 
 .separator {
-    color: #bbb;
+  color: #bbb;
 }
 
 .latest-news-footer {
@@ -542,4 +630,3 @@ header {
   text-decoration: none;
   color: #fb6082;
 }
-
