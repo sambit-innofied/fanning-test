@@ -403,7 +403,7 @@ header {
 
 .suggested-clubs-container {
   margin: 10px;
-  height: 55%;
+  height: 350px;
   /* border: 1px solid red; */
 }
 
@@ -507,6 +507,7 @@ header {
 .latest-news-container {
   margin: 10px;
   height: 100%;
+  /* border: 1px solid red; */
 }
 .latest-news-header {
   font-size: 20px;
