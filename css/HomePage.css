@@ -10,6 +10,7 @@ html,
 body {
   width: 100%;
   height: 100%;
+  background-color: #f5edf0;
 }
 
 main {
@@ -124,7 +125,7 @@ header {
 
 .left {
   width: 20%;
-  height: 100%;
+  height: 100vh;
   /* border: 1px solid red; */
 
   display: flex;
@@ -146,7 +147,7 @@ header {
   width: 25%;
   height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   gap: 8px;
   /* border: 1px solid red; */
 }
@@ -390,15 +391,201 @@ header {
   border-radius: 10px;
   font-size: 14px;
   cursor: pointer;
-  color: #a3a3a3;
+  color: #a3a3a3;              
   font-weight: 600;
-  transition: background 0.18s ease, color 0.18s ease, transform 0.06s ease;
+  transition: background .18s ease, color .18s ease, transform .06s ease;
 }
 
 .feed-tab.active {
-  background: linear-gradient(180deg, #fa496f, #ff4f7b);
+  background: linear-gradient(180deg,#fa496f,#ff4f7b);
   color: #fff;
-  box-shadow: 0 6px 18px rgba(255, 75, 120, 0.12);
+  box-shadow: 0 6px 18px rgba(255,75,120,0.12);
+}
+
+/* CREATE POST  */
+.create-post-container {
+  width: 100%; 
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
+  margin-top: 20px; 
+  box-sizing: border-box; 
+}
+
+.post-input-area {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee; 
+}
+
+.post-input-area .profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.post-input-area .text-prompt {
+  flex-grow: 1; 
+  font-size: 16px;
+  color: #666;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial,
+    sans-serif;
+}
+
+.post-actions-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial,
+    sans-serif;
+}
+
+.action-options {
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+}
+
+.action-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #555;
+  transition: background-color 0.2s;
+  font-size: 14px;
+
+  border: 1px solid #ddd;
+}
+
+.action-item:hover {
+  background-color: #f0f0f0;
+}
+
+.radio-style {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #e76c7f; 
+  border-radius: 4px;
+  margin-right: 8px; 
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.radio-style.checked {
+  background-color: #ff4d6d;
+  border-color: #ff4d6d;
+}
+
+.action-item .icon {
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+
+.action-item .icon-photo {
+  color: #ff4d6d;
+} 
+
+.action-item .icon-link {
+  color: #ff4d6d;;
+} 
+
+.button-group {
+  display: flex;
+  align-items: center;
+}
+
+.discard-button {
+  background: none;
+  border: none;
+  color: #666;
+  font-weight: 600;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 14px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial,
+    sans-serif;
+}
+
+.create-post-button {
+  background-color: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+ 
+}
+
+.action-item-group {
+  display: flex; 
+  border: 1px solid #ddd; 
+  border-radius: 5px; 
+  overflow: hidden; 
+}
+
+.action-item-group .action-item {
+  border: none;
+  border-radius: 0; 
+}
+
+
+/* CREATE POST WITH IMAGE UPLOAD  */
+/* --- New Media/Link Input Area Styles --- */
+
+.post-media-area {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.media-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
+    margin: 0 0 15px 0;
+}
+
+/* Image Input Row (previews + add button) */
+.image-input-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.uploaded-image-preview,
+.image-add-box {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Styling for the Add Button */
+.image-add-box {
+    border: 1px dashed #ff4d6d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.image-add-box .plus-icon {
+    font-size: 30px;
+    font-weight: 300;
+    color: #ff4d6d;
+    line-height: 1;
 }
 
 .suggested-clubs-container {
@@ -633,4 +820,38 @@ header {
 .view-all-link {
   text-decoration: none;
   color: #fb6082;
+}
+
+/* Styling for the actual uploaded image */
+.uploaded-image-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Link Input Box */
+.link-input-box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 15px;
+    background-color: #f9f9f9;
+}
+
+.link-label {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.link-input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    color: #444;
+    outline: none;
+    padding: 0;
+    margin: 0;
 }
