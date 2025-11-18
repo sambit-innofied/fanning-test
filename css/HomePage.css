@@ -26,7 +26,7 @@ header {
   width: 100%;
   height: 50px;
   background: #fff;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 10;
 }
@@ -151,7 +151,7 @@ header {
   width: 25%;
   height: 100%;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   gap: 8px;
   margin-top: 20px;
   /* border: 1px solid red; */
@@ -394,33 +394,33 @@ header {
   border-radius: 10px;
   font-size: 14px;
   cursor: pointer;
-  color: #a3a3a3;              
+  color: #a3a3a3;
   font-weight: 600;
-  transition: background .18s ease, color .18s ease, transform .06s ease;
+  transition: background 0.18s ease, color 0.18s ease, transform 0.06s ease;
 }
 
 .feed-tab.active {
-  background: linear-gradient(180deg,#fa496f,#ff4f7b);
+  background: linear-gradient(180deg, #fa496f, #ff4f7b);
   color: #fff;
-  box-shadow: 0 6px 18px rgba(255,75,120,0.12);
+  box-shadow: 0 6px 18px rgba(255, 75, 120, 0.12);
 }
 
 /* CREATE POST  */
 .create-post-container {
-  width: 100%; 
+  width: 100%;
   background-color: white;
   border-radius: 15px;
   padding: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
-  margin-top: 20px; 
-  box-sizing: border-box; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
+  box-sizing: border-box;
 }
 
 .post-input-area {
   display: flex;
   align-items: center;
   padding-bottom: 20px;
-  border-bottom: 1px solid #eee; 
+  border-bottom: 1px solid #eee;
 }
 
 .post-input-area .profile-pic {
@@ -432,7 +432,7 @@ header {
 }
 
 .post-input-area .text-prompt {
-  flex-grow: 1; 
+  flex-grow: 1;
   font-size: 16px;
   color: #666;
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial,
@@ -451,7 +451,7 @@ header {
 .action-options {
   display: flex;
   align-items: center;
-  gap: 15px; 
+  gap: 15px;
 }
 
 .action-item {
@@ -474,9 +474,9 @@ header {
 .radio-style {
   width: 16px;
   height: 16px;
-  border: 2px solid #e76c7f; 
+  border: 2px solid #e76c7f;
   border-radius: 4px;
-  margin-right: 8px; 
+  margin-right: 8px;
   display: inline-block;
   box-sizing: border-box;
   background-color: white;
@@ -492,14 +492,13 @@ header {
   margin-right: 8px;
 }
 
-
 .action-item .icon-photo {
   color: #ff4d6d;
-} 
+}
 
 .action-item .icon-link {
-  color: #ff4d6d;;
-} 
+  color: #ff4d6d;
+}
 
 .button-group {
   display: flex;
@@ -528,67 +527,65 @@ header {
   font-weight: bold;
   cursor: pointer;
   font-size: 14px;
- 
 }
 
 .action-item-group {
-  display: flex; 
-  border: 1px solid #ddd; 
-  border-radius: 5px; 
-  overflow: hidden; 
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .action-item-group .action-item {
   border: none;
-  border-radius: 0; 
+  border-radius: 0;
 }
-
 
 /* CREATE POST WITH IMAGE UPLOAD  */
 /* --- New Media/Link Input Area Styles --- */
 
 .post-media-area {
-    padding-top: 20px;
-    padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .media-title {
-    font-size: 14px;
-    font-weight: bold;
-    color: #444;
-    margin: 0 0 15px 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+  margin: 0 0 15px 0;
 }
 
 /* Image Input Row (previews + add button) */
 .image-input-row {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 20px;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
 }
 
 .uploaded-image-preview,
 .image-add-box {
-    width: 80px;
-    height: 80px;
-    border-radius: 8px;
-    overflow: hidden;
-    position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
 }
 
 /* Styling for the Add Button */
 .image-add-box {
-    border: 1px dashed #ff4d6d;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  border: 1px dashed #ff4d6d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .image-add-box .plus-icon {
-    font-size: 30px;
-    font-weight: 300;
-    color: #ff4d6d;
-    line-height: 1;
+  font-size: 30px;
+  font-weight: 300;
+  color: #ff4d6d;
+  line-height: 1;
 }
 
 .suggested-clubs-container {
@@ -826,39 +823,321 @@ header {
 
 /* Styling for the actual uploaded image */
 .uploaded-image-preview img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* Link Input Box */
 .link-input-box {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px 15px;
-    background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 15px;
+  background-color: #f9f9f9;
 }
 
 .link-label {
-    display: block;
-    font-size: 12px;
-    color: #666;
-    margin-bottom: 5px;
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 5px;
 }
 
 .link-input {
-    width: 100%;
-    border: none;
-    background: transparent;
-    font-size: 14px;
-    color: #444;
-    outline: none;
-    padding: 0;
-    margin: 0;
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  color: #444;
+  outline: none;
+  padding: 0;
+  margin: 0;
 }
 
 hr {
   border: none;
   border-top: 1px solid #dfd9d9;
+}
+
+/* --- Feed Post Card Styles --- */
+
+.feed-post-card {
+  width: 100%;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
+  padding-bottom: 20px; /* Padding for the comment box */
+}
+
+/* Post Header */
+.post-header {
+  display: flex;
+  align-items: center;
+  padding: 18px 20px 10px 20px;
+  gap: 12px;
+}
+
+.post-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.header-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-user-name {
+  font-weight: 700;
+  font-size: 15px;
+  color: #222;
+}
+
+.post-timestamp {
+  font-size: 13px;
+  color: #a99aa6;
+}
+
+/* Main Image */
+.post-main-image {
+  width: 100%;
+  /* max-height: 400px; Adjust this value as needed for a medium height */
+  height: fit-content; /* Allow it to shrink if image is smaller than max-height */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  border-radius: 8px; /* Added for a slightly softer look, matching the image example */
+  overflow: hidden; /* Ensures any overflow from object-fit is clipped */
+}
+
+.post-content {
+  padding: 0 20px; /* Sets 0 padding top/bottom, and 20px padding left/right */
+}
+/* Caption Text */
+.post-text {
+  /* padding: 15px 20px 10px 20px;
+    font-size: 14px;
+    color: #444; */
+  padding: 10px 20px 5px 20px;
+  font-size: 14px;
+  color: #444;
+}
+
+.post-text p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Link Preview */
+.post-link-preview {
+  padding: 5px 20px 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.link-icon {
+  color: #ff4d6d;
+  font-size: 14px;
+}
+
+.link-url {
+  font-size: 13px;
+  color: #ff4d6d;
+}
+
+/* Stats Row */
+.post-stats-row {
+  /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0 20px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Reduced vertical padding from 10px to 8px */
+  padding: 8px 20px;
+  margin: 0 20px;
+  border-top: 1px solid #eee;
+  /* border-bottom: 1px solid #eee; */
+}
+
+.stats-left,
+.stats-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.stat-item {
+  font-size: 13px;
+  color: #a99aa6;
+  display: flex;
+  align-items: center;
+}
+
+.stat-item i {
+  margin-right: 5px;
+}
+
+.love-stat,
+.comment-stat,
+.share-button {
+  cursor: pointer;
+}
+
+.love-stat i,
+.share-button i,
+.comment-stat i {
+  color: #ff4d6d; /* Pink color for interactive icons */
+}
+
+/* Comment Input Area */
+.post-comment-input {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px 0 20px;
+}
+
+.post-comment-input input {
+  flex-grow: 1;
+  border: none;
+  background-color: #f7f7f7;
+  border-radius: 999px;
+  padding: 10px 15px;
+  font-size: 14px;
+  margin-right: 10px;
+  outline: none;
+}
+
+.post-comment-input input::placeholder {
+  color: #aaa;
+}
+
+.send-button {
+  background: none;
+  border: none;
+  color: #ff4d6d;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px;
+}
+
+/* --- Additional Styles for Poll Post Card --- */
+
+/* Align ellipsis icon in header */
+.post-header .post-options-icon {
+  margin-left: auto; /* Pushes the icon to the far right */
+  color: #888;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Poll Question */
+.poll-question {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  padding: 10px 20px 15px 20px;
+}
+
+/* Poll Options Container */
+.poll-options-container {
+  padding: 0 20px 20px 20px; /* Horizontal padding for the options */
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Space between each poll option */
+}
+
+/* Individual Poll Option */
+.poll-option {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px 15px;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+  position: relative; /* Needed for positioning custom radio */
+}
+
+/* Hide the native radio button */
+.poll-option .poll-radio-input {
+  position: absolute;
+  opacity: 0;
+
+  /* ADD these lines to forcibly remove native browser styling */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  /* Also ensure it takes no physical space */
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom Radio Button Visual */
+.custom-radio {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 6px; /* Slightly rounded square */
+  margin-right: 12px;
+  flex-shrink: 0; /* Prevents it from shrinking */
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: white;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+/* State when the hidden input is CHECKED */
+.poll-radio-input:checked + .custom-radio {
+  border-color: #ff4d6d; /* Pink border when checked */
+  background-color: #ff4d6d; /* Pink fill when checked */
+}
+
+/* Checkmark inside custom radio button when checked */
+.poll-radio-input:checked + .custom-radio::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* DYNAMIC STYLING FOR THE WHOLE POLL OPTION BOX */
+/* When the hidden input is checked, change the parent label's border and background */
+.poll-option:has(.poll-radio-input:checked) {
+  border-color: #ff4d6d; /* Pink border for the whole option */
+  background-color: #fff0f3; /* Light pink background for the whole option */
+}
+
+/* Hover effect for poll options */
+.poll-option:hover {
+  background-color: #f9f9f9;
+}
+
+/* Poll Option Text */
+.poll-option-text {
+  flex-grow: 1;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Poll Votes Count */
+.poll-votes {
+  font-size: 13px;
+  color: #888;
+  font-weight: 600;
 }
