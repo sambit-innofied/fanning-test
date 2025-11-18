@@ -125,13 +125,13 @@ header {
 
 .left {
   width: 20%;
-  height: 100vh;
+  height: 100%;
   /* border: 1px solid red; */
 
   display: flex;
   flex-direction: column;
   gap: 20px; /* space between profile card + sidebar */
-  padding: 10px;
+  padding: 0 8px 8px 16px;
   /* border: 1px solid red; */
   border-bottom: none;
 }
@@ -139,7 +139,7 @@ header {
 .middle {
   width: 55%;
   height: 100%;
-  padding: 18px 24px;
+  padding: 18px 8px 8px 8px;
   box-sizing: border-box;
 }
 
@@ -149,6 +149,7 @@ header {
   display: flex;
   flex-direction: column; 
   gap: 8px;
+  margin-top: 20px;
   /* border: 1px solid red; */
 }
 
@@ -161,7 +162,6 @@ header {
 .profile-card {
   flex-shrink: 0;
   flex: 0 0 auto;
-  margin-bottom: 8px;
   max-width: 340px;
   position: relative;
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial,
@@ -172,7 +172,7 @@ header {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 8px 6px 0 6px;
+  padding: 0 6px 0 6px;
   z-index: 3;
   position: relative;
 }
@@ -200,9 +200,8 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 4px;
   margin-left: 6px;
-  margin-top: 25px;
+  margin-top: 23px;
 }
 .name-row {
   display: flex;
@@ -240,7 +239,7 @@ header {
 }
 
 .profile-stats-card {
-  margin-top: 8px;
+  margin-top: 5px;
   position: relative;
   z-index: 1;
 }
@@ -368,7 +367,7 @@ header {
   margin: 0 0 12px 0;
   color: #111;
   font-weight: 700;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 .feed-nav {
@@ -589,14 +588,14 @@ header {
 }
 
 .suggested-clubs-container {
-  margin: 10px;
+  margin: 8px 16px 8px 8px;
   height: 350px;
   /* border: 1px solid red; */
 }
 
 .suggested-clubs-header {
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .suggested-clubs-section {
@@ -692,7 +691,7 @@ header {
 }
 
 .latest-news-container {
-  margin: 10px;
+  margin: 8px 16px 8px 8px;
   height: 100%;
   /* border: 1px solid red; */
 }
@@ -705,7 +704,7 @@ header {
   flex-direction: column;
   gap: 20px;
   background: #fff;
-  margin-top: 10px;
+  margin-top: 12px;
   padding: 15px 15px 0px 15px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
