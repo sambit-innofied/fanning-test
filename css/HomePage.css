@@ -17,7 +17,12 @@ main {
   height: 100%;
 }
 
-
+/* ---------nav bar---------------- */
+nav {
+  border: 1px solid red;
+  width: 100%;
+  height: 40px;
+}
 
 .left {
   width: 20%;
@@ -28,7 +33,7 @@ main {
   flex-direction: column;
   gap: 20px; /* space between profile card + sidebar */
   padding: 10px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   border-bottom: none;
 }
 
@@ -42,10 +47,9 @@ main {
 .right {
   width: 25%;
   height: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   
 }
-
 
 
 
@@ -91,7 +95,7 @@ main {
   box-shadow: 0 6px 18px rgba(255,75,120,0.12);
 }
 
-/* create post  */
+/* CREATE POST  */
 .create-post-container {
   width: 100%; 
   background-color: white;
@@ -230,6 +234,86 @@ main {
 }
 
 
+/* CREATE POST WITH IMAGE UPLOAD  */
+/* --- New Media/Link Input Area Styles --- */
+
+.post-media-area {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.media-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
+    margin: 0 0 15px 0;
+}
+
+/* Image Input Row (previews + add button) */
+.image-input-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.uploaded-image-preview,
+.image-add-box {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Styling for the Add Button */
+.image-add-box {
+    border: 1px dashed #ff4d6d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.image-add-box .plus-icon {
+    font-size: 30px;
+    font-weight: 300;
+    color: #ff4d6d;
+    line-height: 1;
+}
+
+/* Styling for the actual uploaded image */
+.uploaded-image-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Link Input Box */
+.link-input-box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 15px;
+    background-color: #f9f9f9;
+}
+
+.link-label {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.link-input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    color: #444;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
 
 
 
