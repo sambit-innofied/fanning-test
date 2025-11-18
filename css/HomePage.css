@@ -66,7 +66,7 @@ header {
 }
 
 .search-bar input {
-  width: 55%;
+  width: 45%;
   background: #f5edf0;
   border: none;
   border-radius: 10px;
@@ -78,13 +78,14 @@ header {
 
 .search-bar input::placeholder {
   color: #b8aeb2;
+  font-size: 12px;
 }
 
 .nav-icons {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
   width: 25%;
   padding-right: 20px;
 }
@@ -120,8 +121,8 @@ header {
 
 /* ---- Profile Image ---- */
 .profile img {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -358,7 +359,6 @@ header {
   border-radius: 999px;
   padding: 3px 8px;
   font-size: 12px;
-  font-weight: 700;
 }
 
 .home-header .page-title {
@@ -373,7 +373,7 @@ header {
   width: 100%;
   background: #ffffff;
   border-radius: 12px;
-  padding: 10px;
+  padding: 15px;
   display: inline-flex;
   gap: 12px;
   align-items: center;
@@ -385,8 +385,8 @@ header {
   appearance: none;
   border: none;
   background: transparent;
-  padding: 8px 18px;
-  border-radius: 10px;
+  padding: 10px 18px;
+  border-radius: 13px;
   font-size: 14px;
   cursor: pointer;
   color: #a3a3a3;
@@ -541,7 +541,6 @@ header {
 
 .post-media-area {
   padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .media-title {
