@@ -10,7 +10,6 @@ html,
 body {
   width: 100%;
   height: 100%;
-  /* background-color: #f5edf0; */
 }
 
 main {
@@ -130,13 +129,11 @@ header {
 .left {
   width: 20%;
   height: 100%;
-  /* border: 1px solid red; */
 
   display: flex;
   flex-direction: column;
-  gap: 20px; /* space between profile card + sidebar */
+  gap: 20px;
   padding: 0 8px 8px 16px;
-  /* border: 1px solid red; */
   border-bottom: none;
 }
 
@@ -154,7 +151,6 @@ header {
   flex-direction: column;
   gap: 8px;
   margin-top: 20px;
-  /* border: 1px solid red; */
 }
 
 /* left part profile  */
@@ -591,7 +587,6 @@ header {
 .suggested-clubs-container {
   margin: 8px 16px 8px 8px;
   height: 350px;
-  /* border: 1px solid red; */
 }
 
 .suggested-clubs-header {
@@ -603,7 +598,6 @@ header {
   background-color: white;
   padding-top: 20px;
   height: 80%;
-  /* border: 2px solid red; */
   border-radius: 12px;
   height: 90%;
 }
@@ -612,7 +606,6 @@ header {
   display: flex;
   height: 28.5%;
   width: 100%;
-  /* border: 1px solid blue; */
 }
 
 .club-img-column {
@@ -663,11 +656,9 @@ header {
   display: flex;
   justify-content: center;
   flex: 1;
-  /* border: 1px solid green; */
 }
 
 .join-btn {
-  /* margin-top: 5px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -693,7 +684,6 @@ header {
 .latest-news-container {
   margin: 8px 16px 8px 8px;
   height: 100%;
-  /* border: 1px solid red; */
 }
 .latest-news-header {
   font-size: 20px;
@@ -834,7 +824,6 @@ header {
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 10px 15px;
-  background-color: #f9f9f9;
 }
 
 .link-label {
@@ -868,7 +857,7 @@ hr {
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   margin-top: 20px;
-  padding-bottom: 20px; /* Padding for the comment box */
+  padding-bottom: 20px;
 }
 
 /* Post Header */
@@ -905,21 +894,17 @@ hr {
 /* Main Image */
 .post-main-image {
   width: 100%;
-  /* max-height: 400px; Adjust this value as needed for a medium height */
-  height: fit-content; /* Allow it to shrink if image is smaller than max-height */
-  object-fit: cover; /* Ensures the image covers the area without distortion */
-  border-radius: 8px; /* Added for a slightly softer look, matching the image example */
-  overflow: hidden; /* Ensures any overflow from object-fit is clipped */
+  height: fit-content;
+  object-fit: cover;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .post-content {
-  padding: 0 20px; /* Sets 0 padding top/bottom, and 20px padding left/right */
+  padding: 0 20px;
 }
 /* Caption Text */
 .post-text {
-  /* padding: 15px 20px 10px 20px;
-    font-size: 14px;
-    color: #444; */
   padding: 10px 20px 5px 20px;
   font-size: 14px;
   color: #444;
@@ -950,21 +935,12 @@ hr {
 
 /* Stats Row */
 .post-stats-row {
-  /* display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    margin: 0 20px;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* Reduced vertical padding from 10px to 8px */
   padding: 8px 20px;
   margin: 0 20px;
   border-top: 1px solid #eee;
-  /* border-bottom: 1px solid #eee; */
 }
 
 .stats-left,
@@ -994,7 +970,7 @@ hr {
 .love-stat i,
 .share-button i,
 .comment-stat i {
-  color: #ff4d6d; /* Pink color for interactive icons */
+  color: #ff4d6d;
 }
 
 /* Comment Input Area */
@@ -1006,9 +982,8 @@ hr {
 
 .post-comment-input input {
   flex-grow: 1;
-  border: none;
-  background-color: #f7f7f7;
-  border-radius: 999px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
   padding: 10px 15px;
   font-size: 14px;
   margin-right: 10px;
@@ -1032,7 +1007,7 @@ hr {
 
 /* Align ellipsis icon in header */
 .post-header .post-options-icon {
-  margin-left: auto; /* Pushes the icon to the far right */
+  margin-left: auto;
   color: #888;
   font-size: 18px;
   cursor: pointer;
@@ -1048,10 +1023,10 @@ hr {
 
 /* Poll Options Container */
 .poll-options-container {
-  padding: 0 20px 20px 20px; /* Horizontal padding for the options */
+  padding: 0 20px 20px 20px;
   display: flex;
   flex-direction: column;
-  gap: 12px; /* Space between each poll option */
+  gap: 12px;
 }
 
 /* Individual Poll Option */
@@ -1063,7 +1038,7 @@ hr {
   padding: 12px 15px;
   cursor: pointer;
   transition: background-color 0.2s, border-color 0.2s;
-  position: relative; /* Needed for positioning custom radio */
+  position: relative;
 }
 
 /* Hide the native radio button */
@@ -1071,12 +1046,10 @@ hr {
   position: absolute;
   opacity: 0;
 
-  /* ADD these lines to forcibly remove native browser styling */
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
 
-  /* Also ensure it takes no physical space */
   width: 0;
   height: 0;
   margin: 0;
@@ -1088,9 +1061,9 @@ hr {
   width: 20px;
   height: 20px;
   border: 2px solid #ccc;
-  border-radius: 6px; /* Slightly rounded square */
+  border-radius: 6px;
   margin-right: 12px;
-  flex-shrink: 0; /* Prevents it from shrinking */
+  flex-shrink: 0;
   display: inline-block;
   box-sizing: border-box;
   background-color: white;
@@ -1099,12 +1072,12 @@ hr {
 
 /* State when the hidden input is CHECKED */
 .poll-radio-input:checked + .custom-radio {
-  border-color: #ff4d6d; /* Pink border when checked */
-  background-color: #ff4d6d; /* Pink fill when checked */
+  border-color: #ff4d6d;
+  background-color: #ff4d6d;
 }
 
 /* Checkmark inside custom radio button when checked */
-.poll-radio-input:checked + .custom-radio::after {
+.poll-radio-input:checked {
   content: "";
   position: absolute;
   top: 50%;
@@ -1119,8 +1092,8 @@ hr {
 /* DYNAMIC STYLING FOR THE WHOLE POLL OPTION BOX */
 /* When the hidden input is checked, change the parent label's border and background */
 .poll-option:has(.poll-radio-input:checked) {
-  border-color: #ff4d6d; /* Pink border for the whole option */
-  background-color: #fff0f3; /* Light pink background for the whole option */
+  border-color: #ff4d6d;
+  background-color: #fff0f3;
 }
 
 /* Hover effect for poll options */
