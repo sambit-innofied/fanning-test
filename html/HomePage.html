@@ -1,28 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/HomePage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/HomePage.css">
     <title>Home page</title>
-</head>
-<header>
-    <nav></nav>
-</header>
+  </head>
+  <header>
+  
+  </header>
 
-<body>
+  <body>
     <main>
-        <div class="left">
-            <div class="profile-container"></div>
-            <div class="sidebar-container"></div>
-        </div>
-        <div class="middle"></div>
-        <div class="right">
-            <div class="suggested-clubs-container"></div>
-            <div class="latest-news-container"></div>
-        </div>
-    </main>
-</body>
+      <!-- Left Part  -->
+      <div class="left">
+        <!-- Profile part  -->
+      
+      </div>
 
+      <!-- Middle Part -->
+      <div class="middle">
+        <section class="home-header">
+          <h2 class="page-title">Home</h2>
+
+          <div class="feed-nav" role="tablist" aria-label="Feed switcher">
+            <button class="feed-tab active" role="tab" aria-selected="true">
+              Private Feed
+            </button>
+            <button class="feed-tab" role="tab" aria-selected="false">
+              Club Feed
+            </button>
+          </div>
+        </section>
+
+        <!-- CREATE POST -->
+
+        <section class="create-post-container">
+          <div class="post-input-area">
+            <img
+              class="profile-pic"
+              src="../images/profile_image.jpeg"
+              alt="Rose"
+            />
+            <div class="text-prompt">What's on your mind, Rose?</div>
+          </div>
+
+          <div class="post-actions-row">
+            <div class="action-options">
+              <div class="action-item-group">
+                <label class="action-item">
+                  <span class="radio-style checked"></span>
+                  Post
+                </label>
+                <label class="action-item">
+                  <span class="radio-style"></span>
+                  Poll
+                </label>
+              </div>
+
+              <div class="action-item">
+                <i class="fa-solid fa-camera icon icon-photo"></i>
+                Photo/Video
+              </div>
+
+              <div class="action-item">
+                <i class="fa-solid fa-link icon icon-link"></i>
+                Link
+              </div>
+            </div>
+
+            <div class="button-group">
+              <button class="discard-button">Discard</button>
+              <button class="create-post-button">Create Post</button>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="right">
+        <div class="suggested-clubs-container"></div>
+        <div class="latest-news-container"></div>
+      </div>
+    </main>
+  </body>
 </html>
