@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font: 16px Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
 }
 
 html,
@@ -144,6 +145,9 @@ header {
 .right {
   width: 25%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   /* border: 1px solid red; */
 }
 
