@@ -1113,3 +1113,65 @@ hr {
   color: #888;
   font-weight: 600;
 }
+
+/* Add these new rules for the custom square checkbox */
+.custom-square-radio {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc; /* Thin gray border for unchecked state */
+    border-radius: 6px;
+    margin-right: 12px;
+    flex-shrink: 0;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: white;
+    position: relative; /* Important for positioning the checkmark */
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+/* When the hidden input is checked, style the custom-square-radio next to it */
+.poll-radio-input:checked  {
+    border-color: #ff4d6d; /* Pink border when checked */
+    background-color: white; /* Still white background as per image */
+}
+
+
+/* Find and modify this existing rule */
+.poll-option-text {
+    flex-grow: 1;
+    font-size: 14px;
+    color: #333;
+    /* REMOVE OR CHANGE THIS LINE: margin-left: 20px; */ 
+    margin-left: 0; /* Reset or ensure it's removed if it was there */
+}
+
+
+/* When the input is checked, change the color of the subsequent text span (General Sibling Selector) */
+.poll-radio-input:checked ~ .poll-option-text {
+    color: #ff4d6d; /* Change text color to pink */
+}
+
+
+/* Find and modify the Pink Fill for the checked box */
+.poll-radio-input:checked + .custom-square-radio {
+    border-color: #ff4d6d; /* Pink border (thickness remains 2px) */
+    background-color: white; /* Ensure the background is white */
+}
+
+/* Find and REPLACE the ::after block with this: */
+.poll-radio-input:checked + .custom-square-radio::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    /* Creates the SOLID PINK SQUARE */
+    width: 12px; 
+    height: 12px ;
+    background-color: #ff4d6d; /* SOLID PINK FILL */
+    border-radius: 2px; 
+    transform: translate(-50%, -50%); 
+    border: none;
+}
+
+
